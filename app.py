@@ -105,8 +105,7 @@ st.markdown("""
 
 if st.button("Predict"):
     pred = model.predict(data)
-    st.info(f"Predicted Car Price: ₹{pred[0]:,.2f}")
-
+    st.success(f"Estimated Car Price: ₹{pred[0]/100000:.2f} Lakh")
 st.divider()
 st.markdown("""
 <div style="
